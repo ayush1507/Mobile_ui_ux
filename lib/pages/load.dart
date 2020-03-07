@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
 
-
 class Load extends StatefulWidget {
   @override
   _LoadState createState() => _LoadState();
 }
 
 class _LoadState extends State<Load> {
-
-  void logoshow() async{
+  void logoshow() async {
     await Future.delayed(Duration(seconds: 2));
     Navigator.pushReplacementNamed(context, '/home');
   }
 
   @override
-  void initState(){
+  void initState() {
     super.initState();
     logoshow();
   }
@@ -22,18 +20,17 @@ class _LoadState extends State<Load> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber[50],
       body: Center(
         child: Container(
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
-              'Legacy Plastics',
+              'This will be the loading screen',
               style: TextStyle(
+                  color: Colors.black,
                   letterSpacing: 1.5,
                   fontSize: 30.0,
-                  fontWeight: FontWeight.bold
-              ),
+                  fontWeight: FontWeight.bold),
             ),
           ),
         ),

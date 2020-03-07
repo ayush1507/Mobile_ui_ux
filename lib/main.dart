@@ -9,13 +9,12 @@ void main() => runApp(myApp());
 
 Widget myApp() {
   return MaterialApp(
+    debugShowCheckedModeBanner: false,
     theme: ThemeData(
       brightness: Brightness.dark,
       primaryColor: Colors.black,
       accentColor: Colors.black,
-
       fontFamily: 'Roboto',
-
     ),
     initialRoute: '/',
     routes: {
